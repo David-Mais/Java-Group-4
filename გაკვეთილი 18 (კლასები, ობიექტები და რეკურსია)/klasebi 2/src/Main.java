@@ -111,7 +111,17 @@ public class Main {
 //        System.out.println(car.color);
 //        System.out.println(car.price);
 
-        Car car = new Car("BMW", "M5", 2015, "Black", 56899.98);
+//        Car car = new Car("BMW", "M5", 2015, "Black", 56899.98);
+
+        Methods methods = new Methods();
+//        methods.add(10, 15);
+//        int x = methods.add(10, 15);
+//        System.out.println("X = " + x);
+//        double avg = methods.avg(5, 10, 15);
+//        System.out.println(avg);
+
+//        methods.printNNumbers(5);
+//        System.out.println(methods.fact(5));
     }
 
     static int f(int x) {
