@@ -1,0 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Savarjisho4 {
+    public static void main(String[] args) {
+        String text = "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug"
+                + "Lorem lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio lorem, ullamcorper vitae enim convallis, tempor semper felis. Maecenas malesuada purus quis velit fringilla commodo non eget nulla. Aenean dictum varius odio vel lacinia. Sed eget orci at odio pharetra malesuada non id nisl. Quisque porttitor magna congue consequat tincidunt. Curabitur at pharetra sem. Maecenas ut odio nec massa posuere rutrum. Integer varius mi risus, quis pellentesque enim pharetra eu. Nulla ac luctus aug";
+        String filtered = text.replaceAll("[,.]", "").toLowerCase();
+        System.out.println(filtered);
+        String[] words = filtered.split(" ");
+
+        HashMap<String, Integer> wordCount = new HashMap<>();
+        for (String word : words) {
+            wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+        }
+
+        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+            System.out.println(entry);
+        }
+    }
+}
