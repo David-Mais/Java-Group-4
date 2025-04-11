@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davaleba3.JumpController">
+    <children>
+        <Button fx:id="jumpButton" alignment="CENTER" layoutX="240.0" layoutY="151.0" mnemonicParsing="false" onAction="#jump" prefHeight="98.0" prefWidth="120.0" text="Click Me" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
