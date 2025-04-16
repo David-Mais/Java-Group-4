@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="choice.ChoiceController">
+   <children>
+      <ChoiceBox onAction="#getPet" fx:id="choiceBox" layoutX="225.0" layoutY="188.0" prefWidth="150.0" />
+<!--       <ChoiceBox onAction="#getPet" fx:id="choiceBox" layoutX="225.0" layoutY="188.0" prefWidth="150.0">-->
+<!--           <items>-->
+<!--               <FXCollections fx:factory="observableArrayList">-->
+<!--                   <String fx:value="Dog" />-->
+<!--                   <String fx:value="Cat" />-->
+<!--                   <String fx:value="Parrot" />-->
+<!--                   <String fx:value="Hamster" />-->
+<!--               </FXCollections>-->
+<!--           </items>-->
+<!--       </ChoiceBox>-->
+      <Label fx:id="label" alignment="CENTER" layoutY="61.0" prefHeight="37.0" prefWidth="600.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
