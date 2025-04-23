@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
+   <children>
+      <MenuBar prefHeight="28.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <RadioMenuItem mnemonicParsing="false" text="radio">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="a1" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" text="check" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+                  <RadioMenuItem mnemonicParsing="false" text="radio" toggleGroup="$a1" />
+                  <RadioMenuItem mnemonicParsing="false" text="radio" toggleGroup="$a1" />
+                  <RadioMenuItem mnemonicParsing="false" text="radio" toggleGroup="$a1" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="window">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#close" text="close" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
